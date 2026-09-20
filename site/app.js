@@ -33,7 +33,6 @@ function renderProfile() {
   set("location-line", profile.location);
   set("foot-name", profile.name);
 
-  const github = profile.github || gh.user;
   const links = [];
   if (profile.email) links.push(`<a class="btn primary" href="mailto:${profile.email}">Email</a>`);
   if (profile.phone) {
@@ -41,10 +40,9 @@ function renderProfile() {
     links.push(`<a class="btn ghost" href="tel:${tel}">${profile.phone}</a>`);
   }
   if (profile.linkedin) links.push(`<a class="btn ghost" href="${profile.linkedin}">LinkedIn</a>`);
-  if (github) links.push(`<a class="btn ghost" href="${github}">GitHub</a>`);
   if (profile.resume) links.push(`<a class="btn ghost" href="${profile.resume}">Resume PDF</a>`);
   document.getElementById("contact-links").innerHTML = links.join("");
-  return { profile, github, repo: gh.repo };
+  return { profile, repo: gh.repo };
 }
 
 function renderProjects(repo) {
