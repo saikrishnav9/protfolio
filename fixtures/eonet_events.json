@@ -1,0 +1,53 @@
+{
+  "title": "EONET Events",
+  "events": [
+    {
+      "id": "EONET_DEMO_FIRE",
+      "title": "Wildfires - Northern California",
+      "description": "Active wildfire complex burning through dry timber and brush.",
+      "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_DEMO_FIRE",
+      "closed": null,
+      "categories": [{ "id": "wildfires", "title": "Wildfires" }],
+      "sources": [{ "id": "InciWeb", "url": "https://inciweb.wildfire.gov/" }],
+      "geometry": [
+        {
+          "date": "2026-09-18T00:00:00Z",
+          "type": "Point",
+          "coordinates": [-121.5, 40.1]
+        }
+      ]
+    },
+    {
+      "id": "EONET_DEMO_VOLCANO",
+      "title": "Kilauea Volcano Activity",
+      "description": "Elevated volcanic unrest with intermittent lava fountaining.",
+      "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_DEMO_VOLCANO",
+      "closed": null,
+      "categories": [{ "id": "volcanoes", "title": "Volcanoes" }],
+      "sources": [{ "id": "SIVolcano", "url": "https://volcano.si.edu/" }],
+      "geometry": [
+        {
+          "date": "2026-09-19T06:00:00Z",
+          "type": "Point",
+          "coordinates": [-155.287, 19.421]
+        }
+      ]
+    },
+    {
+      "id": "EONET_DEMO_STORM",
+      "title": "Severe Storms - Gulf Coast",
+      "description": "Organized convective system producing flooding rainfall.",
+      "link": "https://eonet.gsfc.nasa.gov/api/v3/events/EONET_DEMO_STORM",
+      "closed": null,
+      "categories": [{ "id": "severeStorms", "title": "Severe Storms" }],
+      "sources": [{ "id": "NOAA", "url": "https://www.noaa.gov/" }],
+      "geometry": [
+        {
+          "date": "2026-09-20T09:00:00Z",
+          "type": "Point",
+          "coordinates": [-90.07, 29.95]
+        }
+      ]
+    }
+  ]
+}

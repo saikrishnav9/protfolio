@@ -1,0 +1,123 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.demo.tornado",
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [[
+          [-95.45, 29.65],
+          [-95.20, 29.65],
+          [-95.20, 29.90],
+          [-95.45, 29.90],
+          [-95.45, 29.65]
+        ]]
+      },
+      "properties": {
+        "id": "urn:oid:2.49.0.1.840.0.demo.tornado",
+        "areaDesc": "Harris; Fort Bend",
+        "geocode": { "UGC": ["TXC201", "TXC157"], "SAME": ["048201"] },
+        "sent": "2026-09-20T18:04:00+00:00",
+        "effective": "2026-09-20T18:04:00+00:00",
+        "onset": "2026-09-20T18:04:00+00:00",
+        "expires": "2026-09-20T19:00:00+00:00",
+        "ends": "2026-09-20T19:00:00+00:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Extreme",
+        "certainty": "Observed",
+        "urgency": "Immediate",
+        "event": "Tornado Warning",
+        "headline": "Tornado Warning issued September 20 at 1:04PM CDT until 2:00PM CDT by NWS Houston",
+        "description": "A confirmed tornado is on the ground near downtown Houston moving northeast at 30 mph.",
+        "instruction": "Take shelter now in an interior room on the lowest floor."
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.demo.flood",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-80.1918, 25.7617]
+      },
+      "properties": {
+        "id": "urn:oid:2.49.0.1.840.0.demo.flood",
+        "areaDesc": "Miami-Dade",
+        "geocode": { "UGC": ["FLC086"], "SAME": ["012086"] },
+        "sent": "2026-09-20T16:00:00+00:00",
+        "effective": "2026-09-20T16:00:00+00:00",
+        "onset": "2026-09-20T16:00:00+00:00",
+        "expires": "2026-09-21T04:00:00+00:00",
+        "ends": "2026-09-21T04:00:00+00:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Flash Flood Warning",
+        "headline": "Flash Flood Warning for Miami-Dade County",
+        "description": "Training thunderstorms will produce 3 to 5 inches of rain. Life-threatening flash flooding is expected in urban Miami.",
+        "instruction": "Turn around, don't drown. Avoid flooded roadways."
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.demo.winter",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-93.2650, 44.9778]
+      },
+      "properties": {
+        "id": "urn:oid:2.49.0.1.840.0.demo.winter",
+        "areaDesc": "Hennepin, MN",
+        "geocode": { "UGC": ["MNC053"], "SAME": ["027053"] },
+        "sent": "2026-09-19T12:00:00+00:00",
+        "effective": "2026-09-19T12:00:00+00:00",
+        "onset": "2026-09-20T00:00:00+00:00",
+        "expires": "2026-09-20T18:00:00+00:00",
+        "ends": "2026-09-20T18:00:00+00:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Moderate",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Winter Weather Advisory",
+        "headline": "Winter Weather Advisory for the Twin Cities",
+        "description": "3 to 5 inches of snow expected overnight with icy spots on untreated roads.",
+        "instruction": "Plan extra travel time. Use caution on bridges and overpasses."
+      }
+    },
+    {
+      "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.demo.heat",
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-112.0740, 33.4484]
+      },
+      "properties": {
+        "id": "urn:oid:2.49.0.1.840.0.demo.heat",
+        "areaDesc": "Maricopa, AZ",
+        "geocode": { "UGC": ["AZC013"], "SAME": ["004013"] },
+        "sent": "2026-09-20T14:00:00+00:00",
+        "effective": "2026-09-20T14:00:00+00:00",
+        "onset": "2026-09-20T14:00:00+00:00",
+        "expires": "2026-09-21T02:00:00+00:00",
+        "ends": "2026-09-21T02:00:00+00:00",
+        "status": "Actual",
+        "messageType": "Alert",
+        "category": "Met",
+        "severity": "Severe",
+        "certainty": "Likely",
+        "urgency": "Expected",
+        "event": "Excessive Heat Warning",
+        "headline": "Excessive Heat Warning for Phoenix metro",
+        "description": "Highs of 110F. Dangerous heat continues through the evening commute.",
+        "instruction": "Drink water, never leave children or pets in vehicles."
+      }
+    }
+  ]
+}

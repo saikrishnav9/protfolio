@@ -1,0 +1,410 @@
+:root {
+  --paper: #f3ead8;
+  --paper-2: #efe4cc;
+  --ink: #1e2a24;
+  --muted: #5c6a62;
+  --line: #d7c9ae;
+  --rust: #c4491d;
+  --pine: #1f6b57;
+  --card: #fffaf1;
+  --shadow: 8px 8px 0 #1e2a24;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    repeating-linear-gradient(
+      -18deg,
+      #e7d7b8 0 2px,
+      transparent 2px 18px
+    ),
+    #e8d7b4;
+  font-family: "Source Sans 3", system-ui, sans-serif;
+}
+
+.skip {
+  position: absolute;
+  left: -999px;
+}
+
+.paper {
+  max-width: 1080px;
+  margin: 28px auto 64px;
+  background:
+    radial-gradient(900px 280px at 100% 0%, #f7d9b8 0%, transparent 50%),
+    var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: var(--shadow);
+  padding: 0 28px 8px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 0 10px;
+  border-bottom: 2px solid var(--ink);
+}
+
+.mark {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 700;
+  font-size: 22px;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+nav a {
+  color: var(--ink);
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--rust);
+}
+
+.nav-cta {
+  background: var(--rust);
+  color: #fffaf1 !important;
+  padding: 7px 12px;
+  border-radius: 999px;
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1.35fr 0.85fr;
+  gap: 28px;
+  padding: 36px 0 28px;
+}
+
+.kicker {
+  margin: 0 0 8px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--rust);
+}
+
+h1 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: clamp(40px, 6vw, 68px);
+  line-height: 0.92;
+  letter-spacing: -0.03em;
+  margin: 0 0 14px;
+}
+
+h2 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 32px;
+  margin: 0 0 12px;
+  letter-spacing: -0.03em;
+}
+
+.lede,
+.body {
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--muted);
+  max-width: 42ch;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.btn {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 10px 14px;
+  border: 2px solid var(--ink);
+  color: var(--ink);
+  background: var(--card);
+}
+
+.btn.primary {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn.ghost:hover,
+.btn.primary:hover {
+  box-shadow: 4px 4px 0 var(--rust);
+  transform: translate(-1px, -1px);
+}
+
+.ticket {
+  background: var(--card);
+  border: 2px dashed var(--ink);
+  padding: 16px 18px 20px;
+  position: relative;
+  rotate: 1.2deg;
+}
+
+.ticket-label {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin: 0 0 10px;
+  color: var(--pine);
+}
+
+.ticket dl {
+  margin: 0;
+}
+
+.ticket dl div {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 7px 0;
+  border-bottom: 1px solid var(--line);
+  font-size: 14px;
+}
+
+.ticket dt {
+  color: var(--muted);
+}
+
+.ticket dd {
+  margin: 0;
+  font-weight: 700;
+  text-align: right;
+}
+
+.stamp {
+  position: absolute;
+  right: 14px;
+  bottom: 10px;
+  margin: 0;
+  border: 2px solid var(--rust);
+  color: var(--rust);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  rotate: -8deg;
+  background: rgba(255, 250, 241, 0.9);
+}
+
+.band {
+  margin: 0 -28px;
+  padding: 28px;
+  background: var(--pine);
+  color: #f6f1e4;
+}
+
+.band .kicker {
+  color: #f0c9a0;
+}
+
+.project {
+  display: grid;
+  gap: 12px;
+}
+
+.project h3 {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 40px;
+  margin: 0;
+}
+
+.one-liner {
+  font-size: 20px;
+  margin: 0;
+  max-width: 50ch;
+}
+
+.project p,
+.highlights {
+  margin: 0;
+  color: #e4efe8;
+  line-height: 1.5;
+}
+
+.highlights {
+  padding-left: 18px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tags span {
+  border: 1px solid #8bb9a8;
+  padding: 4px 9px;
+  font-size: 12px;
+}
+
+.band .btn.primary {
+  background: #f3ead8;
+  color: var(--ink);
+  border-color: #f3ead8;
+}
+
+.band .btn.ghost {
+  background: transparent;
+  color: #f3ead8;
+  border-color: #f3ead8;
+}
+
+.section {
+  padding: 42px 0 12px;
+  border-top: 2px solid var(--ink);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.timeline {
+  display: grid;
+  gap: 16px;
+}
+
+.job {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  gap: 18px;
+  background: var(--card);
+  border: 2px solid var(--ink);
+  padding: 16px 18px;
+}
+
+.job .when {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 12px;
+  color: var(--rust);
+  font-weight: 500;
+}
+
+.job h3 {
+  margin: 0 0 4px;
+  font-size: 18px;
+}
+
+.job .org {
+  margin: 0 0 8px;
+  color: var(--muted);
+}
+
+.job ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+}
+
+.skill-board {
+  display: grid;
+  gap: 10px;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 110px 1fr;
+  gap: 10px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+
+.skill-row strong {
+  font-size: 13px;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.chips span {
+  background: var(--paper-2);
+  border: 1px solid var(--line);
+  padding: 3px 8px;
+  font-size: 13px;
+}
+
+.edu {
+  margin-top: 18px;
+  display: grid;
+  gap: 8px;
+}
+
+.edu article {
+  border-left: 3px solid var(--rust);
+  padding-left: 10px;
+}
+
+.edu p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.contact h2 {
+  max-width: 16ch;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 18px 0 24px;
+  font-size: 13px;
+  color: var(--muted);
+}
+
+@media (max-width: 800px) {
+  .paper {
+    margin: 0;
+    border: none;
+    box-shadow: none;
+  }
+
+  .hero,
+  .grid-2,
+  .job,
+  .nav,
+  .foot {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .ticket {
+    rotate: 0;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+}

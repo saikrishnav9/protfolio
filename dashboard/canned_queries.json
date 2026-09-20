@@ -1,0 +1,17 @@
+[
+  {
+    "id": "urgent",
+    "label": "What needs attention",
+    "sql": "SELECT event_name AS event, hazard_family AS type, severity_score AS severity, state_or_region AS region, impact_summary AS summary FROM gold_events WHERE severity_score >= 4 ORDER BY severity_score DESC LIMIT 12"
+  },
+  {
+    "id": "by_type",
+    "label": "Signals by type",
+    "sql": "SELECT hazard_family AS type, count(*) AS signals, round(avg(severity_score), 1) AS avg_severity FROM gold_events GROUP BY 1 ORDER BY signals DESC"
+  },
+  {
+    "id": "places",
+    "label": "Where they are",
+    "sql": "SELECT event_name AS event, state_or_region AS region, weather_city AS nearest_city, latitude, longitude FROM gold_events WHERE latitude IS NOT NULL ORDER BY severity_score DESC LIMIT 12"
+  }
+]

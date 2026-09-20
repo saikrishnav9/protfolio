@@ -1,0 +1,50 @@
+version: 2
+
+models:
+  - name: bronze_nws_alerts
+    description: Raw National Weather Service alerts landed from the live GeoJSON feed.
+    columns:
+      - name: alert_id
+        tests: [not_null]
+      - name: event
+        tests: [not_null]
+      - name: ingested_at
+        tests: [not_null]
+
+  - name: bronze_eonet_events
+    description: Raw NASA EONET open events.
+    columns:
+      - name: event_id
+        tests: [not_null]
+      - name: title
+        tests: [not_null]
+
+  - name: silver_events
+    description: Typed, deduplicated events from NWS + EONET.
+    columns:
+      - name: event_id
+        tests: [not_null, unique]
+      - name: source
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["nws", "eonet"]
+      - name: event_name
+        tests: [not_null]
+      - name: severity_rank
+        tests:
+          - not_null
+          - accepted_values:
+              values: [1, 2, 3, 4, 5]
+      - name: ingested_at
+        tests: [not_null]
+
+  - name: gold_events
+    description: Quality-gated events plus structured LLM/heuristic enrichment.
+    columns:
+      - name: event_id
+        tests: [not_null, unique]
+      - name: hazard_family
+        tests: [not_null]
+      - name: confidence
+        tests: [not_null]

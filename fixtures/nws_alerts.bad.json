@@ -1,0 +1,17 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "id": "drift-1",
+      "type": "Feature",
+      "geometry": null,
+      "properties": {
+        "id": null,
+        "event": null,
+        "severity": { "code": 9, "label": "??" },
+        "areaDesc": "unknown",
+        "sent": "not-a-timestamp"
+      }
+    }
+  ]
+}

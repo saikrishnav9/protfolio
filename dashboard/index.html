@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pulse — public hazard desk</title>
+    <meta
+      name="description"
+      content="Pulse turns live weather and earth events into a clean briefing. Warehouse tests pass before any model writes a label."
+    />
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="./styles.css?v=9" />
+  </head>
+  <body>
+    <div class="sheet">
+      <header class="nav">
+        <a class="mark" href="../">Vasireddy</a>
+        <nav>
+          <span class="here">Pulse</span>
+          <a href="../#work">Experience</a>
+          <a id="repo-link" class="ghost" hidden href="https://github.com">Code</a>
+        </nav>
+      </header>
+
+      <section class="hero">
+        <div>
+          <p class="kicker">Live public signals</p>
+          <h1>Pulse</h1>
+          <p class="lede">
+            A briefing desk for weather warnings and earth events. Raw feeds are cleaned,
+            tested, then labeled — the map is the warehouse, not a chat window.
+          </p>
+        </div>
+        <p class="seal" id="freshness">Contracts passing</p>
+      </section>
+
+      <section class="theater" id="pipeline">
+        <div class="section-head tight">
+          <p class="kicker">The landing</p>
+          <h2>Watch a warning become a warehouse row</h2>
+          <p class="lede short">
+            One click. Raw GeoJSON hits Bronze, contracts fire, then — and only then — Gold gets a label.
+          </p>
+          <button type="button" class="btn play" id="play-landing">Play the landing</button>
+        </div>
+        <div class="rail" id="rail" aria-hidden="true">
+          <div class="node" data-stage="0"><span>01</span><strong>Ingest</strong><small>NWS feed</small></div>
+          <div class="wire"></div>
+          <div class="node" data-stage="1"><span>02</span><strong>Bronze</strong><small>Raw land</small></div>
+          <div class="wire"></div>
+          <div class="node gate" data-stage="2"><span>03</span><strong>Contracts</strong><small>Must pass</small></div>
+          <div class="wire"></div>
+          <div class="node" data-stage="3"><span>04</span><strong>Silver</strong><small>Typed row</small></div>
+          <div class="wire"></div>
+          <div class="node" data-stage="4"><span>05</span><strong>Enrich</strong><small>After tests</small></div>
+          <div class="wire"></div>
+          <div class="node gold" data-stage="5"><span>06</span><strong>Gold</strong><small>The desk</small></div>
+        </div>
+        <div class="inspector">
+          <p class="kicker" id="inspect-kicker">Ready</p>
+          <pre id="inspector">Press play. One warning walks the pipeline. Play it again to land the next one.</pre>
+        </div>
+      </section>
+
+      <section class="kpis" id="kpis"></section>
+
+      <section class="stage">
+        <div class="map-wrap">
+          <div id="map"></div>
+          <p class="caption">Larger, rust-colored marks are higher severity.</p>
+        </div>
+        <aside class="mix" id="mix"></aside>
+      </section>
+
+      <section>
+        <div class="section-head">
+          <p class="kicker">Briefing</p>
+          <h2>What is in play</h2>
+        </div>
+        <div class="cards" id="briefing"></div>
+      </section>
+
+      <section class="ask">
+        <div class="section-head">
+          <p class="kicker">Ask the warehouse</p>
+          <h2>Three questions. One table.</h2>
+        </div>
+        <div class="query-bar" id="query-bar"></div>
+        <button type="button" class="sql-toggle" id="sql-toggle">Show the SQL</button>
+        <pre id="sql-view" class="sql" hidden></pre>
+        <div class="table-wrap">
+          <table id="result-table"></table>
+        </div>
+      </section>
+
+      <footer>
+        <a href="../">Back to portfolio</a>
+        <span>NWS · NASA EONET · Open-Meteo</span>
+      </footer>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="./app.js?v=9"></script>
+  </body>
+</html>

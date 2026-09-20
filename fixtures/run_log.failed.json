@@ -1,0 +1,28 @@
+{
+  "run_id": "replay-gate",
+  "started_at": "2026-09-20T17:10:00+00:00",
+  "finished_at": "2026-09-20T17:10:08+00:00",
+  "status": "blocked_quality_gate",
+  "mode": "chaos",
+  "bronze_nws_rows": 1,
+  "bronze_eonet_rows": 3,
+  "bronze_weather_rows": 8,
+  "silver_rows": 0,
+  "gold_rows": 0,
+  "tests_passed": false,
+  "tests_failed": [
+    "bronze_nws_alerts: 1 rows missing event/alert_id"
+  ],
+  "enricher": "skipped",
+  "llm_called": false,
+  "llm_skipped_reason": "quality_gate_failed",
+  "model": null,
+  "prompt_version": "v1",
+  "tokens_in": 0,
+  "tokens_out": 0,
+  "cost_usd": 0.0,
+  "warnings": [
+    "Chaos replay: upstream schema drift. Inference was not invoked."
+  ],
+  "git_sha": "demo"
+}

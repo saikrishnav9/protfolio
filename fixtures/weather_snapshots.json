@@ -1,0 +1,82 @@
+[
+  {
+    "city": "New York",
+    "latitude": 40.7128,
+    "longitude": -74.006,
+    "observed_at": "2026-09-20T18:00",
+    "temperature_c": 22.1,
+    "wind_speed_kmh": 14.2,
+    "precipitation_mm": 0.0,
+    "weather_code": 1
+  },
+  {
+    "city": "Chicago",
+    "latitude": 41.8781,
+    "longitude": -87.6298,
+    "observed_at": "2026-09-20T18:00",
+    "temperature_c": 18.4,
+    "wind_speed_kmh": 20.1,
+    "precipitation_mm": 0.2,
+    "weather_code": 61
+  },
+  {
+    "city": "Houston",
+    "latitude": 29.7604,
+    "longitude": -95.3698,
+    "observed_at": "2026-09-20T18:00",
+    "temperature_c": 31.7,
+    "wind_speed_kmh": 33.5,
+    "precipitation_mm": 4.8,
+    "weather_code": 95
+  },
+  {
+    "city": "Phoenix",
+    "latitude": 33.4484,
+    "longitude": -112.074,
+    "observed_at": "2026-09-20T18:00",
+    "temperature_c": 42.8,
+    "wind_speed_kmh": 12.0,
+    "precipitation_mm": 0.0,
+    "weather_code": 0
+  },
+  {
+    "city": "Seattle",
+    "latitude": 47.6062,
+    "longitude": -122.3321,
+    "observed_at": "2026-09-20T18:00",
+    "temperature_c": 16.2,
+    "wind_speed_kmh": 11.4,
+    "precipitation_mm": 1.1,
+    "weather_code": 63
+  },
+  {
+    "city": "Denver",
+    "latitude": 39.7392,
+    "longitude": -104.9903,
+    "observed_at": "2026-09-20T18:00",
+    "temperature_c": 24.0,
+    "wind_speed_kmh": 18.0,
+    "precipitation_mm": 0.0,
+    "weather_code": 1
+  },
+  {
+    "city": "Miami",
+    "latitude": 25.7617,
+    "longitude": -80.1918,
+    "observed_at": "2026-09-20T18:00",
+    "temperature_c": 29.4,
+    "wind_speed_kmh": 22.7,
+    "precipitation_mm": 6.3,
+    "weather_code": 65
+  },
+  {
+    "city": "Minneapolis",
+    "latitude": 44.9778,
+    "longitude": -93.265,
+    "observed_at": "2026-09-20T18:00",
+    "temperature_c": 1.2,
+    "wind_speed_kmh": 27.0,
+    "precipitation_mm": 0.4,
+    "weather_code": 71
+  }
+]
