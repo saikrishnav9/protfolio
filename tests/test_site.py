@@ -10,7 +10,7 @@ def test_assemble_site_puts_pulse_under_portfolio():
     profile = (ROOT / "site" / "profile.js").read_text(encoding="utf-8")
     assert "Vasireddy" in profile
     assert "Xiphoid" in profile
-    assert "561-212-2811" in profile
+    assert "561-299-0093" in profile
     assert "Iron Mountain" not in profile
     assert "LangChain" in profile
     assert (ROOT / "site" / "projects.js").read_text(encoding="utf-8").find("pulse") >= 0
