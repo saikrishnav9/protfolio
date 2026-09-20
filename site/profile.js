@@ -3,11 +3,11 @@ window.PROFILE = {
   shortName: "Sai Krishna",
   role: "Data Engineer",
   location: "United States",
-  phone: "561-212-2811",
+  phone: "561-299-0093",
   headline:
-    "Data pipelines, backend services, and LLM-powered workflows — built for ownership and reliability.",
+    "Data Engineer with 4+ years designing scalable pipelines, ETL/ELT, and cloud data platforms across AWS, Azure, and GCP.",
   summary:
-    "Data Engineer with 4+ years building data pipelines, backend services, and LLM-powered workflows. Proficient in Python, Airflow, AWS, and service-oriented architectures. Hands-on with LLMs, RAG, and prompt engineering on real data workflows. Builds scalable, automated systems with a strong bias toward ownership and reliability.",
+    "Data Engineer with 4+ years of experience designing and building scalable data pipelines, ETL/ELT workflows, and cloud-based data platforms. Proficient in Python, SQL, PySpark, Azure Databricks, Apache Spark, Delta Lake, and Apache Kafka. Hands-on experience with AI/ML applications including OCR automation, LLM-based data extraction using LangChain and OpenAI APIs, and RAG architectures. Experienced across AWS, Azure, and GCP with strong skills in data modeling, data quality, and delivering analytics solutions using Power BI and Tableau.",
   email: "saikrishna.vasireddy09@gmail.com",
   github: "",
   linkedin: "https://www.linkedin.com/in/saikrishnavasireddy",
@@ -16,26 +16,37 @@ window.PROFILE = {
     {
       school: "Florida Atlantic University",
       credential: "Master's, Computer Science",
-      year: "May 2023 — Dec 2024",
+      year: "2024",
     },
   ],
   certifications: [],
   skillGroups: [
     {
-      label: "Core",
-      items: ["Python", "SQL", "Airflow", "AWS (S3, Glue, Lambda, Redshift, EMR)", "REST APIs", "SOA"],
+      label: "Languages",
+      items: ["Python", "SQL", "PySpark", "Spark SQL", "T-SQL", "Scala", "Shell", "PowerShell"],
     },
     {
-      label: "AI & LLMs",
-      items: ["LangChain", "OpenAI APIs", "RAG", "Prompt engineering", "LLM workflows", "Claude Code", "Copilot", "Cursor"],
+      label: "Cloud",
+      items: ["AWS", "Azure", "GCP"],
     },
     {
-      label: "Data",
-      items: ["ETL/ELT", "Data modeling", "Databricks", "Snowflake", "PostgreSQL", "Elasticsearch", "Delta Lake"],
+      label: "Platforms",
+      items: [
+        "Azure Databricks",
+        "Delta Lake",
+        "Apache Spark",
+        "Apache Kafka",
+        "Apache Airflow",
+        "dbt",
+      ],
     },
     {
-      label: "Tools",
-      items: ["Git", "Docker", "CI/CD", "dbt", "JIRA", "Agile", "Shell"],
+      label: "AI & ML",
+      items: ["LangChain", "OpenAI APIs", "RAG", "Google Document AI", "Cloud Vision OCR", "Prompt engineering"],
+    },
+    {
+      label: "Data & BI",
+      items: ["Medallion / lakehouse", "Dimensional modeling", "Snowflake", "PostgreSQL", "Power BI", "Tableau"],
     },
   ],
   experience: [
@@ -44,11 +55,11 @@ window.PROFILE = {
       company: "Xiphoid Inc",
       dates: "Jan 2025 — Present",
       bullets: [
-        "Designed data pipelines and ETL workflows that ingest, transform, and deliver data using Python, Airflow, and AWS.",
-        "Applied LLMs and prompt engineering to real workflows — RAG pipelines and LLM-powered extraction with LangChain and OpenAI APIs. Used Claude Code and GitHub Copilot to ship faster.",
-        "Built REST APIs and backend services. Developed warehouse schemas on Azure Databricks and Delta Lake. Improved pipeline efficiency by 40%.",
-        "Built automated validation and monitoring. Cut data incidents by 35%.",
-        "Partnered with team leads on performance metrics and reporting pipelines.",
+        "Designed and built scalable ETL/ELT data pipelines on Azure Databricks using Apache Spark, PySpark, and Delta Lake with Medallion Architecture (Bronze, Silver, Gold layers), handling 10TB+ of daily data ingestion and transformation.",
+        "Built end-to-end document ingestion and OCR pipelines using Google Document AI and Google Cloud Vision to extract structured data from millions of legacy documents, improving extraction accuracy by 40%.",
+        "Developed LLM-based data extraction workflows using LangChain and OpenAI APIs, converting unstructured OCR output into structured datasets for downstream analytics and reporting.",
+        "Implemented data quality frameworks including validation logic, anomaly detection, monitoring, and alerting — reducing production data incidents by 35%.",
+        "Collaborated with data scientists, analysts, and business stakeholders to deliver Power BI dashboards and analytics solutions supporting operational decision-making.",
       ],
     },
     {
@@ -56,9 +67,10 @@ window.PROFILE = {
       company: "5Data Inc",
       dates: "Dec 2021 — May 2023",
       bullets: [
-        "Built and operated AWS data pipelines and ETL with Python and Airflow. Reduced latency by 25%.",
-        "Built REST APIs and backend data services for 200+ internal users.",
-        "Partnered with leads to iterate on pipelines and performance metrics.",
+        "Built and maintained ETL/ELT data pipelines on AWS (S3, Glue, EMR, Redshift) and Azure ingesting data from relational databases, SaaS APIs, and streaming sources into centralized data warehouses.",
+        "Engineered real-time Apache Kafka and Spark Streaming pipelines processing 1M+ events per second alongside 30+ Apache Airflow DAGs for batch workloads.",
+        "Designed dimensional data models (star schema, SCD Type 2) for ESG and GHG emissions reporting supporting consistent, auditable metrics for global enterprise clients.",
+        "Developed Power BI and Tableau dashboards used by 200+ stakeholders — reducing reporting latency by 25% through optimized data transformations and semantic model design.",
       ],
     },
     {
@@ -66,8 +78,8 @@ window.PROFILE = {
       company: "IBaseIT Software Solutions",
       dates: "Jan 2021 — Dec 2021",
       bullets: [
-        "Built Python data pipelines and backend services across 50+ client projects.",
-        "Applied ETL, data modeling, and automation. Reduced processing time by 60%.",
+        "Built Python and SQL-based ETL automation workflows across 50+ client projects, reducing manual processing time by 60% through reusable scripting patterns and validation logic.",
+        "Developed RPA automation solutions using Power Automate and UiPath to automate document processing and ETL workflows, ensuring consistent and accurate data ingestion into client systems.",
       ],
     },
   ],
